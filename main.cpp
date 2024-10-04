@@ -1,3 +1,5 @@
+// COMSC-210 | Lab 10 | Daniil Malakhov
+//IDE used: codeblocks
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -9,6 +11,9 @@ class Color{
         int green;
         int blue;
     public:
+        Color() {red = 0; green = 0; blue = 0;}
+        Color(int r = 0, int g = 0, int b = 0) {red = r; green = g; blue = b;}
+        Color(int r = 0) {red = r;}
         double getRed() { return red;}
         void setRed(int r) { red = r;}
         double getGreen() { return green;}
