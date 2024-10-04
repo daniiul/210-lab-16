@@ -11,31 +11,59 @@ class Color{
         int green;
         int blue;
     public:
-        // defualt constructor, sets all variables to 0
+        // default constructor, sets all variables to 0
         Color()
         {
             red = 0;
             green = 0;
             blue = 0;
         }
-        // parametrized constructor
+        // parametrized constructor, sets variables to given values
         Color(int r, int g, int b)
         {
             red = r;
             green = g;
             blue = b;
         }
+        // partial constructor, initializes red to given variable
         Color (int r)
         {
             red = r;
         }
-        double getRed() { return red;}
+
+        // Getter method for red
+        // arguments: none
+        //returns: a double representing of red
+        int getRed() { return red;}
+
+        // Setter method for red
+        // arguments: int representing red
+        // returns: an int representing of red
         void setRed(int r) { red = r;}
-        double getGreen() { return green;}
+
+        // Getter method for green
+        // arguments: none
+        //returns: a double representing of green
+        int getGreen() { return green;}
+
+        // Setter method for green
+        // arguments: int representing green
+        // returns: an int representing of green
         void setGreen(int g) { green = g;}
-        double getBlue() { return blue;}
+
+        // Getter method for blue
+        // arguments: none
+        //returns: a double representing of blue
+        int getBlue() { return blue;}
+
+        // Setter method for blue
+        // arguments: int representing blue
+        // returns: an int representing of blue
         void setBlue(int b) { blue = b;}
 
+        // Print method, prints all variables
+        // arguments: none
+        // returns: none
         void print() const
         {
             cout << "Red: " << red;
