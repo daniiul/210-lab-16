@@ -11,8 +11,18 @@ class Color{
         int green;
         int blue;
     public:
-        Color() {red = 0; green = 0; blue = 0;}
-        Color(int r = 0, int g = 0, int b = 0) {red = r; green = g; blue = b;}
+        Color()
+        {
+            red = 0;
+            green = 0;
+            blue = 0;
+        }
+        Color(int r = 0, int g = 0, int b = 0)
+        {
+            red = r;
+            green = g;
+            blue = b;
+        }
         Color(int r = 0) {red = r;}
         double getRed() { return red;}
         void setRed(int r) { red = r;}
@@ -32,7 +42,9 @@ class Color{
 
 int main()
 {
-    Color a, b, c;
+    Color a(233, 145, 76);
+    Color b;
+
 
     a.setRed(233);
     a.setGreen(145);
