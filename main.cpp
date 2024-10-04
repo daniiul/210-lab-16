@@ -11,19 +11,24 @@ class Color{
         int green;
         int blue;
     public:
+        // defualt constructor, sets all variables to 0
         Color()
         {
             red = 0;
             green = 0;
             blue = 0;
         }
-        Color(int r = 0, int g = 0, int b = 0)
+        // parametrized constructor
+        Color(int r, int g, int b)
         {
             red = r;
             green = g;
             blue = b;
         }
-        Color(int r = 0) {red = r;}
+        Color (int r)
+        {
+            red = r;
+        }
         double getRed() { return red;}
         void setRed(int r) { red = r;}
         double getGreen() { return green;}
@@ -42,21 +47,12 @@ class Color{
 
 int main()
 {
-    Color a(233, 145, 76);
-    Color b;
+    Color a;
+    Color b(233, 145, 76);
+    Color c(132);
 
-
-    a.setRed(233);
-    a.setGreen(145);
-    a.setBlue(76);
-
-    b.setRed(45);
-    b.setGreen(225);
-    b.setBlue(2);
-
-    c.setRed(132);
-    c.setGreen(215);
-    c.setBlue(79);
+    c.setGreen(221);
+    c.setBlue(42);
 
     a.print();
     b.print();
